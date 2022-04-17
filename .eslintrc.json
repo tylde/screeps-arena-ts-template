@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "./"]
+      }
+    }
+  },
+  "env": {
+    "es6": true
+  },
+  "plugins": ["import", "@typescript-eslint", "no-only-tests"],
+
+  "rules": {
+    "import/extensions": ["error", "never"],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-useless-path-segments": "error",
+    "import/no-unresolved": [2, { "ignore": ["arena", "common", "consts", "game"] }],
+    "no-debugger": "error",
+    "no-mixed-operators": "error",
+    "no-only-tests/no-only-tests": "error",
+    "no-return-assign": ["error", "except-parens"],
+    "no-return-await": "error",
+    "no-template-curly-in-string": "error",
+    "no-this-before-super": "error",
+    "no-useless-call": "error",
+    "no-useless-catch": "error",
+    "no-useless-computed-key": "error",
+    "no-useless-escape": "error",
+    "no-useless-rename": "error",
+    "no-useless-return": "error",
+    "object-shorthand": "error",
+    "quotes": ["off"]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "screeps-arena-ts-template",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "yarn build:rollup",
+    "build:rollup": "rollup --config rollup.config.js",
+    "build:watch": "yarn build:rollup --watch",
+    "lint:fix": "eslint --fix **/*.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "@types/node": "17.0.24",
+    "@types/screeps-arena": "screepers/typed-screeps-arena#develop",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-no-only-tests": "2.6.0",
+    "prettier": "^2.6.1",
+    "rollup": "^2.3.3",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-consts": "^1.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
