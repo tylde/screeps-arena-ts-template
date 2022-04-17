@@ -1,8 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import clear from 'rollup-plugin-clear';
-import consts from 'rollup-plugin-consts';
 import typescript from 'rollup-plugin-typescript2';
-import { v4 } from 'uuid';
 
 const plugins = [
   clear({ targets: ['default'] }),
@@ -11,9 +9,6 @@ const plugins = [
     abortOnError: false,
     tsconfig: './tsconfig.json',
     clean: true,
-  }),
-  consts({
-    version: v4(),
   }),
 ];
 

@@ -21,12 +21,10 @@
     "prettier": "^2.6.1",
     "rollup": "^2.3.3",
     "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-typescript": "^1.0.1",
     "rollup-plugin-typescript2": "^0.27.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "uuid": "^8.3.2"
   }
 }
